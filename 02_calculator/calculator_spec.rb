@@ -79,9 +79,12 @@ end
 
 describe "#multiply" do
 
-  it "multiplies two numbers"
-
-  it "multiplies several numbers"
+  it "multiplies two numbers" do
+    expect(multiply(10,10)).to eq(100)
+  end
+  it "multiplies several numbers" do
+    expect(multiply(1,5,2,5,2)).to eq(100)
+  end
   
 end
 
@@ -94,6 +97,10 @@ describe "#factorial" do
   it "computes the factorial of 0"
   it "computes the factorial of 1"
   it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+  it "computes the factorial of 5" do
+    expect(factorial(5)).to eq(120)
+  end
+  it "computes the factorial of 10" do
+    expect(factorial(10)).to eq(3628800)
+  end
 end
